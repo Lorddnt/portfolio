@@ -272,81 +272,7 @@ ul {
   color: darkorange;
   text-decoration: underline #818181;;
 }
-@media screen and (max-width: 768px) {
-    #large-header {
-      width: 100%;
-    }
-    .boy {
-      width: 100%;
-    }
-    .boy1, .boy2, .boy3 {
-      width: 100%;
-    }
-    .burger {
-        display: block;
-    }
-    .list-item {
-        display: block;
-    }
-    .list {
-        position: absolute;
-        background-color: #182C51;
-        right: 0px;
-        left: 0px;
-        top: 50px;
-        text-align: center;
-        clip-path: polygon(0 100%, 0 100%, 0 0%, 0 0%);
-        transition-property: clip-path;
-        transition-duration: 3s;
-    }
-    .mine {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);  
-    }
-    .moon {
-      width: 100px;
-      height: 100px;
-	    left: 70%;
-    }
-    .box {
-      box-sizing: border-box;
-      height: 880px;
-      width: 768px;
-    }
-    .bxxx {
-      justify-content: center;
-      display: flex;
-      flex-wrap: wrap;
-      height: 880px;
-    }
-    .bxx {
-      margin-left: 0px;
-      margin-top: 30px;
-      width: 300px;
-      height: 500px;
-      transform: skew(20deg);
-      transition-property: transform;
-      transition-delay: 0;
-      transition-duration: 3s;
-    }
-    .bxox {
-      width: 385px;
-      height: 400px;
-      margin-top: 30px;
-      transition-property: transform;
-      transition-delay: 0;
-      transition-duration: 3s;
-    }
-    .cove {
-      width: 768px;
-      min-height: 118vh;
-    }
-    .cover {
-      display: flex;
-      flex-wrap: wrap;
-      min-height: 83vh;
-    }
-     
-}
+
 .box {
   height: 970px;
   width: auto;
@@ -998,7 +924,94 @@ input[type=submit]:hover {
 .fet a:hover {
   text-decoration: underline;
 }
-
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  #large-header {
+    max-width: 768px;
+  }
+  .boy {
+    max-width: 768px;
+    box-sizing: border-box;
+  }
+  .boy1, .boy2, .boy3 {
+    width: 100%;
+  }
+  .burger {
+      display: block;
+      padding-top: 3px;
+  }
+  .list-item {
+      display: block;
+  }
+  .list {
+      position: absolute;
+      background-color: #182C51;
+      right: 0px;
+      left: 0px;
+      top: 50px;
+      text-align: center;
+      clip-path: polygon(0 100%, 0 100%, 0 0%, 0 0%);
+      transition-property: clip-path;
+      transition-duration: 3s;
+  }
+  .mine {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);  
+  }
+  .moon {
+    width: 100px;
+    height: 100px;
+    left: 70%;
+  }
+  .box {
+    box-sizing: border-box;
+    height: 880px;
+    width: 768px;
+  }
+  .bxxx {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 920px;
+  }
+  .bxx {
+    margin-left: 0px;
+    margin-top: 30px;
+    width: 500px;
+    height: 450px;
+    transform: skew(20deg);
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 3s;
+  }
+  .bxox {
+    width: 385px;
+    height: 400px;
+    margin-top: 30px;
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 3s;
+  }
+  .cove {
+    width: 768px;
+    min-height: 118vh;
+  }
+  .cover {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 83vh;
+  }
+  .footer {
+    width: 768px;
+    height: 480px;
+  }
+  .foot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 
 
