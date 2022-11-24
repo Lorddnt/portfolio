@@ -30,7 +30,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  animation-name: moon;
+  animation-name: moos;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   z-index: -3;
@@ -78,6 +78,7 @@ body {
   border-radius: 15px;
   color: #efdbd8;
   border: none;
+  cursor: pointer;
 }
 .boton a {
   text-decoration: none;
@@ -85,7 +86,7 @@ body {
   font-weight: bolder;
 }
 
-@keyframes moon {
+@keyframes moos {
  
   20% {
       background-image: url(./image/demo.jpg);
@@ -227,6 +228,12 @@ body {
     position: sticky;
     top: 0px;
     z-index: 5;
+}
+.web {
+   height: 40px;
+   width: 60px;
+   color: #efdbd8;
+   cursor: pointer;
 }
 .butt button {
   height: 35px;
@@ -826,7 +833,7 @@ ul {
 .footer{
   width: 100%;
   height: 250px;
-  background-color: #182C51;;
+  background-color: #182C51;
   margin-top: 30px;
 }
 .foot {
@@ -925,14 +932,11 @@ input[type=submit]:hover {
   text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
-  body {
-    max-width: 768px;
-  }
   #large-header {
-    max-width: 768px;
+    width: 100%;
   }
   .boy {
-    max-width: 768px;
+    width: 100%;
     box-sizing: border-box;
   }
   .boy1, .boy2, .boy3 {
@@ -966,14 +970,13 @@ input[type=submit]:hover {
   }
   .box {
     box-sizing: border-box;
-    height: 880px;
-    width: 768px;
+    height: 970px;
+    width: 100%;
   }
   .bxxx {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    height: 920px;
   }
   .bxx {
     margin-left: 0px;
@@ -994,7 +997,7 @@ input[type=submit]:hover {
     transition-duration: 3s;
   }
   .cove {
-    width: 768px;
+    width: 100%;
     min-height: 118vh;
   }
   .cover {
@@ -1003,13 +1006,24 @@ input[type=submit]:hover {
     min-height: 83vh;
   }
   .footer {
-    width: 768px;
-    height: 480px;
+    width: 100%;
+    height: 240px;
   }
   .foot {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+  }
+  .foot1 {
+    padding: 5px;
+    margin-left: 5px;
+    align-self: flex-start;
+  }
+  .foot3 {
+    margin-top: 40px;
+  }
+  .mycontainer {
+    width: 100%;
   }
 }
 
