@@ -51,7 +51,6 @@ body {
 }
 .itmes {
   font-family: sofia;
-  text-shadow: 40px yellow;
 }
 
 .boy1 {
@@ -215,10 +214,6 @@ body {
       z-index: -1;
       animation: 3.2s cresent linear infinite alternate;
     }
-    section {
-      min-height: 100vh;
-    }
-
   .navbar {
     height: 40px;
     background-color: #182C51;
@@ -254,7 +249,7 @@ body {
 }
 .list a{
   text-decoration: none;
-  color: #818181;
+  color: #efdbd8;
 }
 .burger {
    padding: 10px;
@@ -281,17 +276,19 @@ ul {
 }
 
 .box {
-  height: 970px;
+  height: 500px;
   width: auto;
   text-align: center;
   color: #efdbd8;
 }
 .bxxx {
   display: flex;
+  flex-wrap: wrap;
+  width: auto;
 }
 .bx {
   padding: 20px;
-  color: #aea499;
+  color: #818181;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .pic {
@@ -321,7 +318,7 @@ ul {
   transform: rotateX(43200deg) rotateY(14400deg); 
 }
 .bxx {
-  margin-left: 3%;
+  margin-left: 6%;
   margin-right: 10%;
   margin-top: 20px;
   width: 550px;
@@ -354,10 +351,11 @@ ul {
   background-color: darkgreen
 }
 .cove {
-  justify-content: center;
   height: 500px;
   width: auto;
-  margin: 20px;
+  margin-top: 20px;
+  text-align: center;
+  color: #efdbd8;
 }
 .cover {
   justify-content: center;
@@ -368,6 +366,7 @@ ul {
   flex-wrap: wrap;
 }
 .pride {
+  color: #efdbd8;
   text-align: center;
   padding: 20px;
   font-weight: bolder;
@@ -390,7 +389,7 @@ ul {
   margin-top: 10px;
 }
 .hex h3, p {
-  color: #aea499;
+  color: #818181;
   padding: 5px;
   font-weight: bold;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -405,6 +404,7 @@ ul {
   justify-content: center;
   justify-items: center;
   margin-bottom: 20px;
+  color: #efdbd8;
 }
 .about {
   padding-top: 10px;
@@ -636,6 +636,20 @@ ul {
 .ten:hover {
   background-image: url(./image/flash3.png);
 }
+.eleven {
+  background-image: url(./image/InV.PNG);
+  background-size: cover;
+}
+.eleven:hover {
+  background-image: url(./image/InV.PNG);
+}
+.twelve {
+  background-image: url(./image/InV.PNG);
+  background-size: cover;
+}
+.twelve:hover {
+  background-image: url(./image/InV.PNG);
+}
 
 .project {
   background-color: transparent;
@@ -684,19 +698,22 @@ ul {
 .plane a {
   text-decoration: none;
   font-style: italic;
-  font-size: small;
+  font-size: 20px;
   color: darkgoldenrod;
+}
+.plane a:hover {
+  text-decoration: underline #818181;
 }
 .magic {
   position: absolute;
   bottom: 2px;
-  left: 2px;
+  left: 4px;
 }
 #shape.backfaces .plane {
   -webkit-backface-visibility: visible;
 }
 #shape {
-  -webkit-animation: spin 20s infinite linear;
+  -webkit-animation: spin 40s infinite linear;
 }
 @-webkit-keyframes spin {
   from { -webkit-transform: rotateY(0); }
@@ -832,7 +849,7 @@ ul {
 }
 .footer{
   width: 100%;
-  height: 250px;
+  height: 290px;
   background-color: #182C51;
   margin-top: 30px;
 }
@@ -904,7 +921,12 @@ input[type=submit]:hover {
 .bigcover {
   height: 400px;
   width: auto;
-  
+  color: #efdbd8;
+}
+.label {
+  color: #818181;
+  font-weight: bolder;
+  font-size: 18px;
 }
 .container2 {
   text-align: left;
@@ -933,6 +955,7 @@ input[type=submit]:hover {
 }
 @media screen and (max-width: 768px) {
   #large-header {
+    overflow: hidden;
     width: 100%;
   }
   .boy {
@@ -1007,7 +1030,7 @@ input[type=submit]:hover {
   }
   .footer {
     width: 100%;
-    height: 240px;
+    height: 260px;
   }
   .foot {
     width: 100%;
@@ -1025,6 +1048,232 @@ input[type=submit]:hover {
   .mycontainer {
     width: 100%;
   }
+}
+@media screen and (max-width: 600px) {
+  #large-header {
+    overflow: hidden;
+    width: 100%;
+  }
+  .boy {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .boy1, .boy2, .boy3 {
+    width: 100%;
+  }
+  .burger {
+      display: block;
+      padding-top: 3px;
+  }
+  .list-item {
+      display: block;
+  }
+  .list {
+      position: absolute;
+      background-color: #182C51;
+      right: 0px;
+      left: 0px;
+      top: 50px;
+      text-align: center;
+      clip-path: polygon(0 100%, 0 100%, 0 0%, 0 0%);
+      transition-property: clip-path;
+      transition-duration: 3s;
+  }
+  .mine {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);  
+  }
+  .moon {
+    width: 100px;
+    height: 100px;
+    left: 70%;
+  }
+  .box {
+    box-sizing: border-box;
+    height: 1120px;
+    width: 100%;
+  }
+  .bxxx {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bxx {
+    margin-left: 0px;
+    margin-top: 30px;
+    width: 370px;
+    height: 600px;
+    transform: skew(10deg);
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 3s;
+  }
+  .bxox {
+    width: 385px;
+    height: 400px;
+    margin-top: 30px;
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 3s;
+  }
+  .cove {
+    width: 100%;
+    min-height: 215vh;
+  }
+  .cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 170vh;
+  }
+  .footer {
+    width: 100%;
+    height: 450px;
+  }
+  .foot {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .food {
+    margin: 10px;
+  }
+  .foot1 {
+    border: 2px solid #818181;
+    width: fit-content;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+  }
+  .foot3 {
+    margin-top: 40px;
+  }
+  .fet {
+    padding: 5px;
+  }
+  .mycontainer {
+    width: 100%;
+  }
+  .bigcover {
+    width: 100%;
+  }
+  .container2 {
+    width: 400px;
+  }
+  #container {
+    -webkit-perspective: 600; /* For compatibility with android, we leave off the units here */
+  }
+  #shape {
+    height: 150px;
+    width: 150px;
+  }
+  .plane {
+    height: 150px;
+    width: 150px;
+  }
+  /* ---------- ring styles ------------- */
+.ring > .one {
+  -webkit-transform: translateZ(280px);
+}
+
+.ring > .two {
+  -webkit-transform: rotateY(30deg) translateZ(280px);
+}
+
+.ring > .three {
+  -webkit-transform: rotateY(60deg) translateZ(280px);
+}
+
+.ring > .four {
+  -webkit-transform: rotateY(90deg) translateZ(280px);
+}
+
+.ring > .five {
+  -webkit-transform: rotateY(120deg) translateZ(280px);
+}
+
+.ring > .six {
+  -webkit-transform: rotateY(150deg) translateZ(280px);
+}
+
+.ring > .seven {
+  -webkit-transform: rotateY(180deg) translateZ(280px);
+}
+
+.ring > .eight {
+  -webkit-transform: rotateY(210deg) translateZ(280px);
+}
+
+.ring > .nine {
+  -webkit-transform: rotateY(-120deg) translateZ(280px);
+}
+
+.ring > .ten {
+  -webkit-transform: rotateY(-90deg) translateZ(280px);
+}
+
+.ring > .eleven {
+  -webkit-transform: rotateY(300deg) translateZ(280px);
+}
+
+.ring > .twelve {
+  -webkit-transform: rotateY(330deg) translateZ(280px);
+}
+/* ---------- cube styles ------------- */
+.cube > .one {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(90deg) translateZ(75px);
+}
+
+.cube > .two {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) translateZ(75px);
+}
+
+.cube > .three {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(90deg) translateZ(75px);
+}
+
+.cube > .four {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(180deg) translateZ(75px);
+}
+
+.cube > .five {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateY(-90deg) translateZ(75px);
+}
+
+.cube > .six {
+  opacity: 0.5;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(75px) rotate(180deg);
+}
+
+
+.cube > .seven {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(90deg) translateZ(75px) rotate(180deg);
+}
+
+.cube > .eight {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) translateZ(75px);
+}
+
+.cube > .nine {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(90deg) translateZ(75px);
+}
+
+.cube > .ten {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(180deg) translateZ(75px);
+}
+
+.cube > .eleven {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateY(-90deg) translateZ(75px);
+}
+
+.cube > .twelve {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8) rotateX(-90deg) translateZ(75px);
+}
+  
 }
 
 
