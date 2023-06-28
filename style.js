@@ -188,8 +188,7 @@ const burger = document.querySelector('.burger');
     burger.onclick = function () {
         let list = document.querySelector('.list');
         list.classList.toggle('mine');
-    };
-
+};
 
 let btn = document.querySelector('.span'); 
 btn.onclick = function() {
