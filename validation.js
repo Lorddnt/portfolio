@@ -1,3 +1,4 @@
+
 function sendMail(){
     var params = {
         name:document.getElementById("name").value,
@@ -6,8 +7,8 @@ function sendMail(){
         message:document.getElementById("message").value
     };
 
-const serviceID = "service_2wgzdvi";
-const templateID = "template_3jys4ct";
+const serviceID = "service_jw3dith";
+const templateID = "template_tz156h9";
 
 emailjs.send(serviceID, templateID, params).then((res) =>{
     document.getElementById("name").value ="";
@@ -19,3 +20,14 @@ emailjs.send(serviceID, templateID, params).then((res) =>{
 })
 .catch((err) => console.log(err));
 }
+
+// Function to clear input fields after form submission
+function clearForm() {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+}
+
+
+

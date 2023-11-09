@@ -14,7 +14,7 @@
   </script>
   <script type="text/javascript">
       (function () {
-          emailjs.init("yxJDgoobLhwdlG5NL");
+          emailjs.init("VJM77TH68TITJfF5_");
       })();
   </script>
   
@@ -199,7 +199,7 @@
  </div>
  <div class="bigcover">
   <h2 class="head-title" id="contact">CONTACT ME</h2>
- <form class="container2" id="" method="" onsubmit="clearForm">
+ <form class="container2" id="" method="" onsubmit="clearForm()">
   <label class="label" for="fname">Name</label>
   <input type="text" id="fname" name="firstname" placeholder="full Name" required>
 
@@ -210,7 +210,7 @@
   <input type="text" id="subject" name="subject" placeholder="subject" required>
 
   <label class="label" for="message">Message</label>
-  <textarea id="text" name="message" placeholder="Message" style="height:50px"></textarea>
+  <textarea id="text" name="message" placeholder="Message" rows="3"></textarea>
 
   <input type="submit" value="Submit" onclick="sendMail()">
 </form>
@@ -249,15 +249,8 @@
 
       <script src="style.js"></script>
       <script src="validation.js"></script>
+ 
 
-      <script>
-        // Function to clear input fields after form submission
-        function clearForm() {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("subject").value = "";
-            document.getElementById("message").value = "";
-        }
-    </script>
+    
 </body>
 </html>
