@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Elmessiri|Alice|Lobster|Playball">
     <script src="https://kit.fontawesome.com/989af73fd5.js" crossorigin="anonymous"> </script>
     <title>MY PORTFOLIO</title>
+     <!-- ======= Emailjs init ======= -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+      (function () {
+          emailjs.init("yxJDgoobLhwdlG5NL");
+      })();
+  </script>
+  
 </head>
 <body>
         <div class="boy" id="large-header">
@@ -190,16 +199,20 @@
  </div>
  <div class="bigcover">
   <h2 class="head-title" id="contact">CONTACT ME</h2>
- <form class="container2" action="https://formspree.io/f/xyyqgdkn" method="POST">
+ <form class="container2" id="" method="" onsubmit="clearForm">
   <label class="label" for="fname">Name</label>
-  <input type="text" id="fname" name="firstname" placeholder="Full Name">
+  <input type="text" id="fname" name="firstname" placeholder="full Name" required>
 
   <label class="label" for="email">Email</label>
-  <input type="email" id="email" name="email" placeholder="Email">
-  <label class="label" for="subject">Message</label>
-  <textarea id="subject" name="subject" placeholder="Message" style="height:50px"></textarea>
+  <input type="email" id="email" name="email" placeholder="Email" required>
 
-  <input type="submit" value="Submit">
+  <label class="label" for="subject">Subject</label>
+  <input type="text" id="subject" name="subject" placeholder="subject" required>
+
+  <label class="label" for="message">Message</label>
+  <textarea id="text" name="message" placeholder="Message" style="height:50px"></textarea>
+
+  <input type="submit" value="Submit" onclick="sendMail()">
 </form>
 </div>
 <footer class="footer">
@@ -235,5 +248,16 @@
 </footer>
 
       <script src="style.js"></script>
+      <script src="validation.js"></script>
+
+      <script>
+        // Function to clear input fields after form submission
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("subject").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
 </body>
 </html>
